@@ -1,0 +1,453 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+li{
+    list-style:  none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+img{
+ vertical-align: middle;
+}
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+
+.title{
+    text-align: center;
+}
+.title {
+    font-size: 40px;
+    font-weight: 700;
+    color: #272727;
+}
+.title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #272727;
+    width: 542px ;
+    margin: auto;
+}
+.headding{
+    font-size: 20px;
+    font-weight: 600;
+    color: #272727;
+}
+.pera{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+}
+/*common css end */
+
+/* navbar start*/
+#navbar{
+    padding: 30px 0;
+   
+}
+
+.main{
+    display: flex;
+justify-content: space-between;
+}
+.logo{
+    width: 25%;
+}
+#navbar .manu {
+display: flex;
+align-items: center;
+
+}
+#navbar .batton{
+   
+    display: flex;
+    align-items: center;
+}
+    
+#navbar ul li{
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #272727;
+} 
+#navbar .manu ul li a{
+    margin: 0 28px;
+    color: #272727;
+    transition: .4s;
+    position: relative;
+}
+#navbar .batton ul li a{
+   padding: 13px 24px;
+   background-color: #5956E8;
+   color: #fffeff;
+   border-radius: 10px;
+
+}
+#navbar .manu ul li a:hover{
+    color: #5956E8;
+}
+
+#navbar .manu ul li a::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    bottom: 5px;
+    width: 5px;
+    height: 5px;
+    background-color: #5956E8;
+    border-radius: 50%;
+    z-index: -1;
+    transition: .4s;
+    opacity: 0;
+}
+#navbar .manu ul li a:hover:before{
+    opacity: 1;
+    bottom: -15px;
+}
+
+
+/* navbar end*/
+/* bannar start*/
+#bannar{
+    padding: 182px 0;
+    background-color: #5956E8;
+}
+#bannar .main{
+    display: flex;
+    justify-content: space-between;
+}
+.bannar_text{
+    display: flex;
+    align-items: center;
+    width: 45%;
+   
+}
+.bannar_immage{
+    width: 45%;
+
+}
+.bannar_text h1{
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 80px;
+    font-family: 'Inter', sans-serif;
+    color: #fffeff;
+}
+.bannar_text p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    font-family: 'Inter', sans-serif;
+    color: #fffeff;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+.bannar_text a {
+        font-size: 16px;
+        font-weight: 400;
+        font-family: 'Inter', sans-serif; 
+        padding: 13px 24px;
+        background-color: #fffeff;
+        color: #5956E8;
+        border-radius: 10px;
+    }
+
+/* bannar end*/
+/* sevies start*/
+#servies{
+    padding: 100px 0;
+}
+#servies .main{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+#servies .main .item{
+    width: 370px;
+    
+    margin-top: 30px;
+    padding: 63px 48px;
+    border: 1px solid #E3E3E3;
+    border-radius: 10px;
+    transition: .4s;
+}
+#servies .main .item:hover{
+    border-color: transparent;
+    box-shadow: 0px 6px 35px rgba(0, 0, 0, 0.08);
+border-radius: 10px;
+}
+#servies h3{
+    font-size: 25px;
+    font-weight: 600;
+    color: #272727;
+    margin-top: 30px;
+    margin-bottom: 20px;
+ 
+}
+#servies .main .item i{
+    font-size: 36px;
+    color: #5956E8;
+    height: 71px;
+    width: 71px;
+    border: 1px solid #5956E8;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 71px;
+    transition: .4s;
+}
+#servies .main .item i:hover{
+color: #fffeff;
+background-color: #5956E8;
+}
+/* servies  end*/
+/* portfilo  start*/
+#portfilo{
+    padding: 100px 0;
+}
+#portfilo h3 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #272727;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+#portfilo p{
+    margin-bottom: 50px;
+}
+#portfilo .filter_batton{
+    width: 800px;
+    padding: 23px ;
+    border-radius: 10px;
+   
+    margin: auto;
+    background-color: #9c9afa3a;
+}
+#portfilo .filter_batton ul{
+    display: flex;
+    justify-content: space-between;
+    transition: .4s;
+}
+#portfilo .filter_batton ul li{
+    position: relative;
+    cursor: pointer;
+    transition: .4s;
+}
+#portfilo .filter_batton ul li:hover {
+    color: #5956E8;
+    
+}
+#portfilo .filter_batton ul li::before{
+    position: absolute;
+    content: '';
+    left: 50%;
+    top: -23px;
+    transform: translateX(-50%)scaleX(0);
+    width: 100%;
+    height: 2px;
+    background-color: #5956E8;
+}
+#portfilo .filter_batton ul li:hover::before{
+    transform: translateX(-50%)scaleX(1);
+    transition: .4s;
+}
+#portfilo .main{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top:50px;
+}
+#portfilo .main .item{
+    width: 270px;
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+#portfilo .main .item img{
+    width: 100%;
+    display: block;
+}
+#portfilo .overaly{
+    width: 230px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: #5956E8;
+    position: absolute;
+    bottom: 17px;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    transition: .4s;
+    text-align: center;
+}
+#portfilo .item:hover .overaly{
+
+ transform: translateX(-50%) scale(1);
+}
+#portfilo .overaly h4{
+    color: #fffeff;
+    margin-top: 30px;
+}
+#portfilo .overaly a{
+    color: #fffeff;
+}
+/* portfilo  end*/
+
+
+/* team   start*/
+#team{
+    padding: 50px;
+}
+#team h3 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #272727;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+#team p{
+    margin-bottom: 50px;
+}
+#team .main{
+    display: flex;
+    justify-content: space-between;
+    margin-top:50px;
+}
+
+#team .main .item{
+
+    width: 370px;
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  
+}
+#team .main .item img{
+    width: 100%;
+   
+}
+#team .main .item .overaly{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #5956E8 -1.13%, rgba(255, 255, 255, 0) 58.11%);
+    position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  
+}
+#team .main .item .overaly h4{
+font-size: 20px;
+font-weight: 600;
+color: #fffeff;
+}
+#team .main .item .overaly p{
+color: #fffeff;
+}
+#team .salider_batton{
+    margin-top: 30px;
+}
+#team .salider_batton ul{
+    display: flex;
+    justify-content: center; 
+  
+}
+ #team .salider_batton ul li{
+width: 12px;
+height: 12px;
+border-radius: 50%;
+margin: 0 5px;
+background-color:#f8d1f8;
+transition: .4s;
+cursor: pointer;
+}
+#team .salider_batton ul li:hover{
+    background-color: #5956E8;
+}
+#team .salider_batton ul li:nth-child(3){
+background-color: #5956E8;
+}
+
+/*  team  end*/
+/*customer start*/
+#customer{
+    padding-bottom: 100px;
+}
+#customer .title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+#customer .title p{
+    margin: 0;
+}
+#customer .title h3{
+        font-size: 25px;
+        font-weight: 600;
+        color: #272727;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        
+    }
+#customer .main{
+    display: flex;
+    justify-content: space-between;
+}
+#customer .main .item{
+    position: relative;
+    width: 370px;
+    padding: 48px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 35px rgba(0, 0, 0, 0.08);
+}
+
+#customer .main .item .img_shape{
+    height: 83px;
+    width: 83px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+#customer .main .item .img_shape img{
+    width: 100%;
+}
+#customer .main .item .ratting i{
+    color: #fbbf25;
+    font-size: 20px;
+    margin-right: 5px;
+}
+#customer .main .item .ratting{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+#customer .main .item h2{
+    margin-top: 15px;
+    
+}
+#customer .main .item p{
+    color: #5d5d5d;
+}
+#customer .main .item .qute_shape{
+    font-size: 63px;
+    color: rgba(93, 93, 93, 0.3);
+    position: absolute;
+    bottom: 24px;
+    right: 30px;
+}
+
+/* ============
+customer part end
+============ */
