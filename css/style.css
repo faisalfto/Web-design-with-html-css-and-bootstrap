@@ -451,3 +451,11 @@ background-color: #5956E8;
 /* ============
 customer part end
 ============ */
+
+/* footer start*/
+#footer .footer_image{
+    background-image: url(../images/Subtract.png);
+
+}
+
+/* footer end */
