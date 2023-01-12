@@ -455,7 +455,10 @@ customer part end
 /* footer start*/
 #footer .footer_image{
     background-image: url(../images/Subtract.png);
-
+    height: 150px;
 }
-
+#footer .footer_image .input{
+    text-align: center;
+    margin-bottom: 30px;
+}
 /* footer end */
